@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @live_aboard.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @live_aboard.address %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @live_aboard.phone %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @live_aboard.website %>
+</p>
+
+<%= link_to 'Edit', edit_live_aboard_path(@live_aboard) %> |
+<%= link_to 'Back', live_aboards_path %>

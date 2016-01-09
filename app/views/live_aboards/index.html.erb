@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Live Aboards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Website</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @live_aboards.each do |live_aboard| %>
+      <tr>
+        <td><%= live_aboard.name %></td>
+        <td><%= live_aboard.address %></td>
+        <td><%= live_aboard.phone %></td>
+        <td><%= live_aboard.website %></td>
+        <td><%= link_to 'Show', live_aboard %></td>
+        <td><%= link_to 'Edit', edit_live_aboard_path(live_aboard) %></td>
+        <td><%= link_to 'Destroy', live_aboard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Live aboard', new_live_aboard_path %>

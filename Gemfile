@@ -26,3 +26,5 @@ gem 'sdoc', '0.4.0', group: :doc
 gem 'spring',   group: :development
 # Rails 12Factor required by Heroku
 gem 'rails_12factor', group: :production
+# Use CarrierWave for image production
+gem 'carrierwave'

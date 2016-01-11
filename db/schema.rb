@@ -11,15 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160109185701) do
+ActiveRecord::Schema.define(version: 20160111133616) do
 
-  create_table "live_aboards", force: :cascade do |t|
-    t.string   "name"
-    t.string   "address"
-    t.string   "phone"
-    t.string   "website"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "live_aboards", force: true do |t|
+    t.string   "name",       limit: nil
+    t.string   "address",    limit: nil
+    t.string   "phone",      limit: nil
+    t.string   "website",    limit: nil
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "image"
   end
 
 end

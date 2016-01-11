@@ -20,9 +20,9 @@
         <td><%= live_aboard.address %></td>
         <td><%= live_aboard.phone %></td>
         <td><%= live_aboard.website %></td>
-        <td><%= link_to 'Show', live_aboard %></td>
-        <td><%= link_to 'Edit', edit_live_aboard_path(live_aboard) %></td>
-        <td><%= link_to 'Destroy', live_aboard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', live_aboard, class: "btn btn-link" %></td>
+        <td><%= link_to 'Edit', edit_live_aboard_path(live_aboard), class: "btn btn-link" %></td>
+        <td><%= link_to 'Destroy', live_aboard, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Live aboard', new_live_aboard_path %>
+<%= link_to 'New Live aboard', new_live_aboard_path, class: "btn btn-link" %>

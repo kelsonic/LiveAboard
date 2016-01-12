@@ -28,3 +28,7 @@ gem 'spring',   group: :development
 gem 'rails_12factor', group: :production
 # Use CarrierWave for image production
 gem 'carrierwave'
+# Use fog for AWS image storage
+gem 'fog', '1.3.1'
+# Use figaro to hide AWS keys
+gem 'figaro'

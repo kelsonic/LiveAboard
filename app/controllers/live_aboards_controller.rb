@@ -69,6 +69,6 @@ class LiveAboardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def live_aboard_params
-      params.require(:live_aboard).permit(:name, :address, :phone, :website)
+      params.require(:live_aboard).permit(:name, :address, :phone, :website, :image)
     end
 end
